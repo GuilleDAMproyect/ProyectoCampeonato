@@ -1,4 +1,4 @@
-package com.dam.TorneoAPP;
+package com.dam.TorneoAPP.model;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -10,7 +10,7 @@ private String color1;
 private String color2;
 private String categoria;
 private List <FichaInscripcion> jugadores;
-private boolean inscrito;
+
 
 public Equipo(String nombre, String patrocinador, String color1, String color2, String categoria) {
 	this.nombre = nombre;
@@ -19,6 +19,7 @@ public Equipo(String nombre, String patrocinador, String color1, String color2, 
 	this.color2 = color2;
 	this.categoria = categoria;
 	jugadores= new ArrayList<FichaInscripcion>();
+	
 }
 
 public String getNombre() {
@@ -58,10 +59,5 @@ public void setJugadores(List<FichaInscripcion> jugadores) {
 	this.jugadores = jugadores;
 }
 
-public boolean isInscrito() {
-	return inscrito;
-}
-public void inscribirseCampeonato(boolean inscripcion) {
-	this.inscrito=inscripcion;
-}
+
 }

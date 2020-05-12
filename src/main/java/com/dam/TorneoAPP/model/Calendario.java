@@ -1,4 +1,4 @@
-package com.dam.TorneoAPP;
+package com.dam.TorneoAPP.model;
 
 import java.util.ArrayList;
 import java.util.List;
